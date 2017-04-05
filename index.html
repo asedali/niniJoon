@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px;
+      line-height: 1.8;
+      color: #818181;
+background-image:url('One-Happy-Baby.jpg');
+
+
+  background-position: center center;
+  
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  background-size: cover;
+
+  background-color: #464646;
+  }
+
+
+.border {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    opacity:0.8;
+}
+.border:active {
+    background: #464646;
+    padding: 15px;
+    border-radius: 10px;
+    opacity:0.5;
+}
+  .container-fluid {
+      padding: 10px 10px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 4em;
+  }
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+
+  </style>
+</head>
+<body>
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+<h1><span class="label label-success">نی نی جون</span></h1>
+<h4><span class="label label-info">مامانی من دارم چی می گم؟</span></h4>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-music logo-small border" onclick="soundPlay('neh')" data-toggle="modal" data-target="#nehModal"><h2>Neh</h2></span>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-music logo-small border" onclick="soundPlay('owh')" data-toggle="modal" data-target="#owhModal"><h2>Owh</h2></span>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-music logo-small border" onclick="soundPlay('heh')" data-toggle="modal" data-target="#hehModal"><h2>Heh</h2></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-music logo-small border" onclick="soundPlay('Eairh')" data-toggle="modal" data-target="#EairhModal"><h2>Eairh</h2></span>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small border" data-toggle="modal" data-target="#MyModal"><h2>  من  </h2></span>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-music logo-small border" onclick="soundPlay('ehh')" data-toggle="modal" data-target="#ehhModal"><h2>Ehh</h2></span>
+    </div>
+  </div>
+
+
+<!-- NehModal -->
+  <div class="modal fade" id="nehModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" onclick="soundPause('neh')" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">نی نی جون</h4>
+        </div>
+        <div class="modal-body text-center">
+          <p>مامان جونی من خیلی گشنمه</p>
+          <p>لطقا به من شیر بده</p>
+          <p>این جوری</p>
+<img src="img/neh-1.png" class="img-responsive img-rounded"><br>
+<img src="img/neh-2.png" class="img-responsive img-rounded"><br>
+<img src="img/neh-3.png" class="img-responsive img-rounded"><br>
+<img src="img/neh-4.png" class="img-responsive img-rounded"><br>
+<img src="img/neh-5.png" class="img-responsive img-rounded"><br>
+<img src="img/neh-6.png" class="img-responsive img-rounded">
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="soundPause('neh')" class="btn btn-warning center-block" data-dismiss="modal">خروج</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ehhModal -->
+  <div class="modal fade" id="ehhModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" onclick="soundPause('ehh')" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">نی نی جون</h4>
+        </div>
+        <div class="modal-body text-center">
+          <p>مامان جونی باد گلویم را بگیر</p>
+          <p>این جوری</p>
+<img src="img/ehh-1.png" class="img-responsive img-rounded">
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="soundPause('ehh')" class="btn btn-warning center-block" data-dismiss="modal">خروج</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- EairhModal -->
+  <div class="modal fade" id="EairhModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" onclick="soundPause('Eairh')" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">نی نی جون</h4>
+        </div>
+        <div class="modal-body text-center">
+          <p>مامان جونی پایین شکمم خیلی درد می کنه</p>
+          <p>منو این جوری ماساژ بده</p>
+<img src="img/eairh-1.png" class="img-responsive img-rounded"><br>
+<img src="img/eairh-2.png" class="img-responsive img-rounded"><br>
+<img src="img/eairh-3.png" class="img-responsive img-rounded"><br>
+<img src="img/eairh-4.png" class="img-responsive img-rounded"><br>
+<img src="img/eairh-5.png" class="img-responsive img-rounded"><br>
+<img src="img/eairh-6.png" class="img-responsive img-rounded">
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="soundPause('Eairh')" class="btn btn-warning center-block" data-dismiss="modal">خروج</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- OwhModal -->
+  <div class="modal fade" id="owhModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" onclick="soundPause('owh')" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">نی نی جون</h4>
+        </div>
+        <div class="modal-body text-center">
+          <p>مامان جونی من خیلی خستم می خوام بخوابم</p>
+          <p>این جوری</p>
+<img src="img/owh-1.png" class="img-responsive img-rounded"><br>
+<img src="img/owh-2.png" class="img-responsive img-rounded"><br>
+<img src="img/owh-3.png" class="img-responsive img-rounded"><br>
+<img src="img/owh-4.png" class="img-responsive img-rounded">
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="soundPause('owh')" class="btn btn-warning center-block" data-dismiss="modal">خروج</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- hehModal -->
+  <div class="modal fade" id="hehModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" onclick="soundPause('heh')" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">نی نی جون</h4>
+        </div>
+<div class="modal-body text-center">
+          <p>مامان جونم من ناراحتم کمکم کن لطفا</p>
+          <p>ممکنه گرمم یاشه شایدم سردمه</p>
+          <p>شایدم باید پوشکمو عوض کنی</p>
+<img src="funny-cartoon-baby-pictures-cute.jpeg" class="img-responsive">
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="soundPause('heh')" class="btn btn-warning center-block" data-dismiss="modal">خروج</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- myModal -->
+  <div class="modal fade" id="MyModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">نی نی جون</h4>
+        </div>
+        <div class="modal-body text-center">
+          <p>بچه ها یک اتقاق هیجان انگیز تو زندگی هر کسی هست</p>
+          <p>برا منم همین طور دونستن این لغات و اینکه بچه هر وقت ناراحته از چی ناراحته خیلی خیلی به هر پدر مادری کمک می کنه</p>
+          <p>نظرات و پیشنهادات خودتونو برای من بفرستید</p>
+          <p>toSeyyedali[at]gmail[dot]com</p>
+<img src="funny-cartoon-baby-pictures-cute.jpeg" class="img-responsive">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning center-block" data-dismiss="modal">خروج</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<button onclick="playAudio('successSound')">Play successSound local</button>
+<button onclick="playAudio('successSound2')">Play successSound local2</button>
+<button onclick="playAudio('errorSound')">Play errorSoundlocal</button>
+ <audio id="successSound" src="/android_asset/www/sound/sayHello.mp3" type="audio/mpeg" ></audio>
+ <audio id="successSound2" src="http://html5multimedia.com/media/sayHello.mp3" type="audio/mpeg" ></audio>
+ <audio id="errorSound" src="/sound/sayHello.mp3" type="audio/mpeg" ></audio>
+
+<audio id="ehh" src="sound/ehh.ogg" type="audio/ogg" loop></audio>
+<audio id="heh" src="file:///android_asset/www/sound/heh.ogg" type="audio/ogg" loop></audio>
+<audio id="neh" src="file:///android_asset/sound/neh.ogg" type="audio/ogg" loop></audio>
+<audio id="owh" src="/android_asset/www/sound/sound/owh.ogg" type="audio/ogg" loop></audio>
+<audio id="Eairh" src="sound/Eairh.ogg" type="audio/ogg" loop></audio>
+<script> 
+
+function soundPause(id){
+        var audioElement = document.getElementById(id);
+    var url = audioElement.getAttribute('src');
+    var my_media = new Media(url,
+            // success callback
+             function () { console.log("playAudio():Audio Success"); },
+            // error callback
+             function (err) { console.log("playAudio():Audio Error: " + err); }
+    );
+           // Play audio
+    my_media.pause();
+
+} 
+
+function soundPlay(id){
+    
+    var audioElement = document.getElementById(id);
+    var url = audioElement.getAttribute('src');
+    var my_media = new Media(url,
+            // success callback
+             function () { console.log("playAudio():Audio Success"); },
+            // error callback
+             function (err) { console.log("playAudio():Audio Error: " + err); }
+    );
+           // Play audio
+    my_media.play();
+
+}
+
+
+function playAudio(id) {
+    var audioElement = document.getElementById(id);
+    var url = audioElement.getAttribute('src');
+    var my_media = new Media(url,
+            // success callback
+             function () { console.log("playAudio():Audio Success"); },
+            // error callback
+             function (err) { console.log("playAudio():Audio Error: " + err); }
+    );
+           // Play audio
+    my_media.play();
+}
+</script> 
+</body>
+</html>
